@@ -1,0 +1,22 @@
+@media (max-width: 450px) {
+  #content #education .formation-content {
+    display: block;
+  }
+  #content #education .formation-content div {
+    margin: 0;
+  }
+  #content #education .formation-content .formation-date {
+    margin: 0;
+  }
+  #contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  #contact div {
+    margin: 5px 0;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

@@ -1,0 +1,224 @@
+@media screen and (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+@media (max-width: 768px) {
+    p{
+        font-size: 18px;
+    }
+    h2{
+        font-size: 1.8rem;
+    }
+    h3{
+        font-size: 1.3rem;
+    }
+    p, li, a{
+        font-size: 1rem;
+    }
+    #scroll-to-top {
+        z-index: 10;
+        bottom: 10px;
+        right: 20px;
+        opacity: 0.6;
+        font-size: 50px;
+    }
+    #scroll-to-top:hover {
+        opacity: 1;
+    }
+    .profile-main {
+        padding: 20px;
+        .profile-pic img {
+            width: 150px;
+            height: 150px;
+        }
+        .profile-presentation{
+            .infos{
+                h2{
+                    font-size: 1.3rem!important;
+                }
+            }
+            .rs {
+                margin-bottom: $marginBig;
+            }
+        }
+    }
+    .profile-content{
+        margin: $marginLight 0;
+        text-align: left;
+        padding: 0;
+        h2{
+            text-align: left;
+            letter-spacing: 0;
+        }
+    }
+    #content {
+        #menu {
+            display: none;
+            padding: 0;
+            flex-direction: column;
+            text-align: center;
+            div{
+                margin: $marginLight 0;
+            }
+        }
+        #mobile-menu {
+            display: block;
+            width: auto;
+            text-transform: uppercase;
+            font-size: 1rem;
+            font-weight: 600;
+            .mobile-menu-header {
+                background-color: $white;
+                color: $lightYellow;
+                border-bottom:$borderMiddle solid $lightYellow;
+                padding: $paddingBig 20px;
+                width: 100%;
+                text-align: center;
+            }
+            .mobile-menu-items{
+                border-right:$borderMiddle solid $lightYellow;
+                border-left:$borderMiddle solid $lightYellow;
+                border-bottom:$borderMiddle solid $lightYellow;
+                background-color: $white;
+            }
+            .mobile-menu-item{
+                text-align: center;
+                background-color: $white;
+                a{
+                    display: inline-block;
+                    text-decoration: none;
+                    padding: $paddingBig 0;
+                }
+                a[href="#skills"] {
+                    color: $lightViolet;
+                }
+                a[href="#experiences"]{
+                    color: $lightRose;
+                }
+                a[href="#productions"]{
+                    color: $lightGreen;
+                }
+                a[href="#education"]{
+                    color: $lightYellow;
+                }
+                a[href="#skills"]:hover{
+                    color: $white;
+                    background-color: $lightViolet;
+                    transition: background-color 0.2s;
+                }
+                a[href="#experiences"]:hover{
+                    color: $white;
+                    background-color: $lightRose;
+                    transition: background-color 0.2s;
+                }
+                a[href="#productions"]:hover{
+                    color: $white;
+                    background-color: $lightGreen;
+                    transition: background-color 0.2s;
+                }
+                a[href="#education"]:hover{
+                    color: $white;
+                    background-color: $lightYellow;
+                    transition: background-color 0.2s;
+                }
+            }
+        }
+        #skills{
+            .skill-content {
+                flex-direction: column;
+                div{
+                    h3{
+                        margin: $marginLight 0;
+                    }
+                    width: 100%;
+                    margin: $marginLight 0;
+                    p{
+                        margin: 0;
+                    }
+                }
+            }
+            .wrapper {
+                flex-direction: column;
+                &.cards {
+                    .card-container {
+                        width: auto;
+                        margin: 5px;
+                    }
+                }
+            }
+        }
+
+        #experiences{
+            .vertical-line {
+                background-image: none!important;
+            }
+            .experience-item{
+                flex-direction: column;
+                margin: $marginBig 0;
+                i.fa-circle{
+                    display: none;
+                }
+                .exp{
+                    .exp-info{
+                        img{
+                            width: 50px;
+                            height: 50px;
+                        }
+                    }
+                }
+            }
+        }
+
+        #productions {
+            .productions-slider .slick-slide img {
+                margin: 0 auto;
+            }
+            .slick-prev{
+                left: 10px;
+                z-index: 9;
+            }
+            .slick-next{
+                right: 10px;
+                z-index: 9;
+            }
+            .production-details {
+                padding-left: 18px;
+            }
+        }
+        #education{
+            .formation-content{
+                display: block;
+                
+                div{
+                    margin: 0;
+                }
+    
+                .formation-date{
+                    margin: 0;
+                    padding-bottom: $paddingBig;
+
+                }
+            }
+        }
+
+        #bonus {
+            margin: 0;
+            h2 {
+                height: 40px;
+            }
+        }
+    }
+    
+    #contact {
+        .footer-contact {
+           flex-direction: column;
+            text-align: center;
+            div{
+                margin: 5px 0;
+            } 
+        }     
+    }
+
+}
