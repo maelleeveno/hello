@@ -62,8 +62,8 @@ p, ul, li{
     top: 0;
     left: 0;
     z-index: 9;
-    width: 88%!important;
-    margin: 0 6%!important;
+    width: 100%!important;
+    box-shadow: 0 1px 10px #aaa;
 }
 .active-item {
     color: $white!important;
@@ -483,6 +483,10 @@ p, ul, li{
     #productions{
         h2{
             color: $lightGreen;
+        }
+        p {
+            font-style: italic;
+            font-size: $help;
         }
         .productions-slider {
             padding: $paddingBig 0;
